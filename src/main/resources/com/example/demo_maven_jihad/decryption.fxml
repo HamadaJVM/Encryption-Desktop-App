@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #131E18;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo_maven_jihad.DecryptionController">
+   <children>
+      <TextField fx:id="text_entery" alignment="CENTER" layoutX="202.0" layoutY="77.0" onAction="#enter">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextField>
+      <ImageView fx:id="image_copy_name" fitHeight="46.0" fitWidth="58.0" layoutX="315.0" layoutY="185.0" onMouseClicked="#copyName" onMouseEntered="#setOnMouseEntered" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/copy_icon.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="text_name" alignment="CENTER_RIGHT" editable="false" layoutX="373.0" layoutY="185.0" prefHeight="44.0" prefWidth="273.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Text fill="WHITE" layoutX="48.0" layoutY="268.0" onMouseEntered="#changeItsColor" onMouseExited="#changeItsColorBack" strokeType="OUTSIDE" strokeWidth="0.0" text="The Technical Section" textAlignment="CENTER" wrappingWidth="212.13671875">
+         <font>
+            <Font name="Times New Roman Bold" size="41.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="image_copy_department" fitHeight="46.0" fitWidth="58.0" layoutX="315.0" layoutY="356.0" onMouseClicked="#copy_department" onMouseEntered="#setOnMouseEntered" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/copy_icon.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="text_department" alignment="CENTER_RIGHT" editable="false" layoutX="373.0" layoutY="356.0" prefHeight="44.0" prefWidth="273.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <ImageView fx:id="image_copy_title" fitHeight="46.0" fitWidth="58.0" layoutX="315.0" layoutY="270.0" onMouseClicked="#copyTitle" onMouseEntered="#setOnMouseEntered" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/copy_icon.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="text_title" alignment="CENTER_RIGHT" editable="false" layoutX="373.0" layoutY="270.0" prefHeight="44.0" prefWidth="273.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Label layoutX="189.0" layoutY="25.0" text="Enter The hash Code Here" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="image_back" fitHeight="46.0" fitWidth="69.0" layoutX="48.0" layoutY="430.0" onMouseClicked="#back" onMouseEntered="#setOnMouseEntered" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/back_icon.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="lable_the_technical_section" fill="#f8ff25" layoutX="48.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Technical Section" textAlignment="CENTER" visible="false" wrappingWidth="212.13671875">
+         <font>
+            <Font name="Times New Roman Bold" size="41.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="image_clear_all" fitHeight="44.0" fitWidth="40.0" layoutX="623.0" layoutY="25.0" onMouseClicked="#clearAll" onMouseEntered="#setOnMouseEntered" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/trash_icon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

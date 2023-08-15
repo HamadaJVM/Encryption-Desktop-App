@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="my_anchor_pane" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #01252a;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo_maven_jihad.EncryptionController">
+   <children>
+      <Text fill="WHITE" layoutX="234.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Technical Section" textAlignment="CENTER" wrappingWidth="212.13671875">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="407.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ادخل الأسم الثلاثي :" textAlignment="CENTER" wrappingWidth="283.13671875">
+         <font>
+            <Font name="Traditional Arabic" size="45.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="407.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ادخل العنوان الوظيفي:" textAlignment="CENTER" wrappingWidth="283.13671875">
+         <font>
+            <Font name="Traditional Arabic" size="45.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="407.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ادخل الشعبة او الوحدة:" textAlignment="CENTER" wrappingWidth="283.13671875">
+         <font>
+            <Font name="Traditional Arabic" size="45.0" />
+         </font>
+      </Text>
+      <TextField fx:id="edit_text_name" alignment="CENTER_RIGHT" layoutX="90.0" layoutY="42.0" onAction="#enterName" onMouseEntered="#setOnMouseEntered" prefHeight="0.0" prefWidth="283.0">
+         <font>
+            <Font name="Arial Narrow" size="23.0" />
+         </font>
+      </TextField>
+      <ChoiceBox fx:id="choiceBox_employee_title" layoutX="90.0" layoutY="137.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="36.0" prefWidth="242.0" stylesheets="@nice.css">
+         
+      </ChoiceBox>
+      <CheckBox fx:id="check_box_title" layoutX="347.0" layoutY="133.0" mnemonicParsing="false" onAction="#departmentCheckBoxChange" onMouseEntered="#setOnMouseEntered" prefHeight="45.0" prefWidth="72.0" text="م." textFill="WHITE">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font>
+      </CheckBox>
+      <ChoiceBox fx:id="choiceBox_employee_department" layoutX="90.0" layoutY="232.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="36.0" prefWidth="242.0" stylesheets="@nice.css" />
+      <CheckBox fx:id="check_box_Unit" layoutX="347.0" layoutY="228.0" mnemonicParsing="false" onAction="#UnitCheckBoxChange" onMouseEntered="#setOnMouseEntered" prefHeight="45.0" prefWidth="45.0" text="و." textFill="WHITE">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font>
+      </CheckBox>
+      <ImageView fx:id="image_done" fitHeight="67.0" fitWidth="94.0" layoutX="90.0" layoutY="361.0" onMouseEntered="#setOnMouseEntered" onMousePressed="#clickDone" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/check_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image_view_back" fitHeight="67.0" fitWidth="53.0" layoutX="620.0" layoutY="428.0" nodeOrientation="RIGHT_TO_LEFT" onMouseEntered="#setOnMouseEntered" onMousePressed="#clickBack" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/back_green_icon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

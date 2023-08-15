@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #005542#1c819e;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo_maven_jihad.AboutController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#014031" height="350.0" layoutX="25.0" layoutY="25.0" stroke="BLACK" strokeMiterLimit="0.0" width="250.0" />
+      <Label layoutX="98.0" layoutY="35.0" text="Developed" textFill="#ffbe00">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="138.0" layoutY="69.0" text="By" textFill="#ffbe00">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="105.0" text="Mohamed" textFill="#ffbe00">
+         <font>
+            <Font name="Impact" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="143.0" text="AL-Bejawi" textFill="#ffbe00">
+         <font>
+            <Font name="Impact" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="177.0" layoutY="346.0" text="version : " textFill="#dfdfdf">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="249.0" layoutY="348.0" text="1.2" textFill="#dfdfdf">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img_clikc_linkedin" fitHeight="35.0" fitWidth="35.0" layoutX="81.0" layoutY="207.0" onMouseEntered="#setOnMouseEntered" onMousePressed="#linkedin_click" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/linkedin_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img_clikc_telegram" fitHeight="35.0" fitWidth="35.0" layoutX="186.0" layoutY="207.0" onMouseEntered="#setOnMouseEntered" onMousePressed="#telegram_click" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/telegram_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img_clikc_back" fitHeight="35.0" fitWidth="35.0" layoutX="35.0" layoutY="339.0" onMouseEntered="#setOnMouseEntered" onMousePressed="#back_click" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/back_icon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
